@@ -56,7 +56,7 @@ export function Experience() {
                 {[
                   { name: "AWS Certified Cloud Practitioner", status: "Certified", href: "https://www.credly.com/badges/5aa312a2-e7e7-4e99-9042-f81b86c92eb9/public_url" },
                   { name: "AWS Certified Solutions Architect — Associate", status: "Planned" },
-                  { name: "Terraform 004", status: "Certified", href: "https://www.credly.com/badges/9f798aa6-09ed-49c0-86f6-892fe0b3f8da/public_url" },
+                  { name: "Terraform Associate", status: "Certified", href: "https://www.credly.com/badges/9f798aa6-09ed-49c0-86f6-892fe0b3f8da/public_url" },
                 ].map((c) => (
                   <li key={c.name} className="flex items-center justify-between rounded-lg border border-dashed border-white/10 px-3 py-2.5">
                     {c.href ? (
