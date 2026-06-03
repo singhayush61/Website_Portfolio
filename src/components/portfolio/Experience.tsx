@@ -54,12 +54,18 @@ export function Experience() {
               </p>
               <ul className="mt-4 space-y-2.5 text-sm">
                 {[
-                  { name: "AWS Certified Cloud Practitioner", status: "Certified" },
+                  { name: "AWS Certified Cloud Practitioner", status: "Certified", href: "https://www.credly.com/badges/5aa312a2-e7e7-4e99-9042-f81b86c92eb9/public_url" },
                   { name: "AWS Certified Solutions Architect — Associate", status: "Planned" },
-                  { name: "Terraform 004", status: "Certified" },
+                  { name: "Terraform 004", status: "Certified", href: "https://www.credly.com/badges/9f798aa6-09ed-49c0-86f6-892fe0b3f8da/public_url" },
                 ].map((c) => (
                   <li key={c.name} className="flex items-center justify-between rounded-lg border border-dashed border-white/10 px-3 py-2.5">
-                    <span className="font-mono text-xs">{c.name}</span>
+                    {c.href ? (
+                      <a href={c.href} target="_blank" rel="noopener noreferrer" className="font-mono text-xs hover:text-primary transition">
+                        {c.name}
+                      </a>
+                    ) : (
+                      <span className="font-mono text-xs">{c.name}</span>
+                    )}
                     <span className="text-[10px] uppercase tracking-wider text-muted-foreground">{c.status}</span>
                   </li>
                 ))}

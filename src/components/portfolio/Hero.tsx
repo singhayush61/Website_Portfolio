@@ -121,7 +121,7 @@ export function Hero() {
                     </div>
                     <div className="mt-1 flex items-center gap-2 font-mono text-sm">
                       <Cloud className="w-4 h-4 text-primary" />
-                      AWS · K8s
+                      AWS · Terraform
                     </div>
                   </div>
                 </div>
